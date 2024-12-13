@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+tabulator
+tabulator-header
+tabulator-col tabulator-sortable tabulator-col-sorter-element
+tabulator-tableholder
+tabulator-footer
+tabulator-paginator
+tabulator-header-filter search
+*/
+
+@layer utilities {
+  .tabulator {
+    @apply appearance-none text-white bg-gradient-to-r from-zinc-950 to-purple-950 rounded-md shadow-xl shadow-slate-500 font-mono;
+  }
+  .tabulator .tabulator-header {
+    @apply bg-gradient-to-t from-zinc-950 to-purple-950;
+  }
+
+  .tabulator .tabulator-header .tabulator-col {
+    @apply appearance-none bg-gradient-to-t from-zinc-950 to-purple-950 text-xl;
+  }
+
+  .tabulator .tabulator-row {
+    @apply appearance-none border-b-white text-lg h-16;
+  }
+
+  .tabulator .tabulator-header-filter {
+    @apply appearance-none text-black outline-none;
+  }
+}
